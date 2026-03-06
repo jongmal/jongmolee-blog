@@ -1,17 +1,32 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
+import { getCollection } from 'astro:content';
 
+const posts = await getCollection('posts', ({ data }) => data.status === 'publish');
+const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="홈" description="종모의 개인 칼럼">
+  <section>
+    <h1 class="text-2xl font-bold mb-2">개인 칼럼</h1>
+    <p class="text-gray-600 dark:text-zinc-400 mb-10">개발, 생각, 경험을 기록합니다.</p>
+
+    {sortedPosts.length === 0 ? (
+      <p class="text-gray-500 dark:text-zinc-500 text-center py-20">아직 발행된 글이 없습니다.</p>
+    ) : (
+      <div class="divide-y divide-gray-100 dark:divide-zinc-800">
+        {sortedPosts.map(post => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            date={post.data.date}
+            tags={post.data.tags}
+            series={post.data.series}
+            href={`/posts/${post.id}`}
+          />
+        ))}
+      </div>
+    )}
+  </section>
+</BaseLayout>

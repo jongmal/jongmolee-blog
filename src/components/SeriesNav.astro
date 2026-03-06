@@ -1,0 +1,48 @@
+---
+interface Props {
+  series: string;
+  posts: any[];
+  currentOrder?: number;
+  showList?: boolean;
+}
+
+const { series, posts, currentOrder, showList = false } = Astro.props;
+
+const currentIndex = posts.findIndex(p => p.data.seriesOrder === currentOrder);
+const prev = currentIndex > 0 ? posts[currentIndex - 1] : null;
+const next = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+---
+
+<div class="border border-gray-200 dark:border-zinc-800 rounded-xl p-5 my-8 bg-gray-50 dark:bg-zinc-900/50">
+  <h3 class="text-sm font-semibold text-gray-500 dark:text-zinc-500 mb-3">
+    📚 {series} 시리즈 ({posts.length}편)
+  </h3>
+
+  {showList && (
+    <ol class="space-y-1.5 mb-4 text-sm">
+      {posts.map((post, i) => (
+        <li class={`flex gap-2 ${post.data.seriesOrder === currentOrder ? 'font-semibold text-primary dark:text-primary-dark' : 'text-gray-600 dark:text-zinc-400'}`}>
+          <span class="text-gray-400 dark:text-zinc-600 w-5 text-right flex-shrink-0">{i + 1}.</span>
+          {post.data.seriesOrder === currentOrder ? (
+            <span>{post.data.title}</span>
+          ) : (
+            <a href={`/posts/${post.id}`} class="hover:underline">{post.data.title}</a>
+          )}
+        </li>
+      ))}
+    </ol>
+  )}
+
+  <div class="flex justify-between gap-4 text-sm">
+    {prev ? (
+      <a href={`/posts/${prev.id}`} class="flex items-center gap-1 text-gray-600 dark:text-zinc-400 hover:text-primary dark:hover:text-primary-dark transition-colors">
+        ← {prev.data.title}
+      </a>
+    ) : <span />}
+    {next ? (
+      <a href={`/posts/${next.id}`} class="flex items-center gap-1 text-gray-600 dark:text-zinc-400 hover:text-primary dark:hover:text-primary-dark transition-colors ml-auto text-right">
+        {next.data.title} →
+      </a>
+    ) : <span />}
+  </div>
+</div>
