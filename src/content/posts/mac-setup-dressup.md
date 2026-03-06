@@ -158,6 +158,17 @@ brew install --cask coconutbattery
 
 > **💡 팁:** coconutBattery에서 배터리 최대 충전 용량을 꼭 확인해 보세요. 설계 용량 대비 **80% 이하**면 교체를 고려할 시점이에요.
 
+### RunCat
+
+메뉴 바에서 달리는 고양이로 CPU 사용량을 보여주는 앱이에요. 오래전부터 많은 맥 유저들의 메뉴 바를 채워온 귀여운 하드웨어 모니터링 도구예요. CPU 부하가 높아질수록 고양이가 빠르게 달려요 🐱
+
+![RunCat 스크린샷](/images/mac-setup-dressup/20260306235237.png)
+*CPU 사용량에 따라 달리는 속도가 바뀌어요. 메모리, 디스크 사용량도 확인 가능.*
+
+```bash
+brew install --cask runcat
+```
+
 ---
 
 ## 🎯 마무리
@@ -165,7 +176,7 @@ brew install --cask coconutbattery
 오늘 소개한 패키지들을 한 줄로 정리하면:
 
 ```bash
-brew install --cask bartender hiddenbar font-pretendard itsycal monitorcontrol hazeover macs-fan-control coconutbattery
+brew install --cask bartender hiddenbar font-pretendard itsycal monitorcontrol hazeover macs-fan-control coconutbattery runcat
 ```
 
 이 한 줄이면 메뉴 바 정리, 폰트 설치, UI 유틸리티, 배터리 모니터링까지 전부 끝이에요.
