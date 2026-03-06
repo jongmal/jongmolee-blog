@@ -44,35 +44,52 @@
   margin-right: auto;
 }
 
-/* ── 테이블 ── */
+/* ── 테이블 (shadcn) ── */
 .prose table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  caption-side: bottom;
+}
+.prose table caption {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #6b7280;
 }
 .prose thead th {
-  background: #f9fafb;
-  font-weight: 600;
+  height: 3rem;
+  padding: 0 1rem;
   text-align: left;
-  padding: 0.75rem 1rem;
-  border-bottom: 2px solid #e5e7eb;
+  font-weight: 500;
+  color: #6b7280;
+  background: transparent;
+  border-bottom: 1px solid #e5e7eb;
 }
 .dark .prose thead th {
-  background: #1f1f1f;
-  border-bottom-color: #333;
+  color: #9ca3af;
+  border-bottom-color: #27272a;
 }
 .prose tbody td {
   padding: 0.75rem 1rem;
+  vertical-align: middle;
   border-bottom: 1px solid #f3f4f6;
 }
 .dark .prose tbody td {
-  border-bottom-color: #2a2a2a;
+  border-bottom-color: #1f1f1f;
 }
 .prose tbody tr:hover {
-  background: #f9fafb;
+  background: rgba(0, 0, 0, 0.02);
 }
 .dark .prose tbody tr:hover {
-  background: #1a1a1a;
+  background: rgba(255, 255, 255, 0.02);
+}
+.prose tfoot td {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  border-top: 1px solid #e5e7eb;
+}
+.dark .prose tfoot td {
+  border-top-color: #27272a;
 }
 
 /* ── blockquote ── */
