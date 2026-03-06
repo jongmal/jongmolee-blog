@@ -5,7 +5,7 @@ date: 2026-03-06
 tags: ["macOS", "유틸리티", "자동화"]
 slug: "mac-setup-dressup"
 category: "개인 칼럼"
-series: "맥 세팅 자동화"
+series: "맥 초기 세팅"
 seriesOrder: 2
 status: publish
 ---

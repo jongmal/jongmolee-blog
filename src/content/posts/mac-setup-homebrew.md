@@ -5,7 +5,7 @@ date: 2026-03-06
 tags: ["macOS", "Homebrew", "자동화"]
 slug: "mac-setup-homebrew"
 category: "개인 칼럼"
-series: "맥 세팅 자동화"
+series: "맥 초기 세팅"
 seriesOrder: 1
 status: publish
 ---
@@ -20,7 +20,7 @@ status: publish
 
 ## 1. 홈브루(Homebrew)란? 🍺
 
-쉽게 말해 **"터미널판 앱스토어"**예요.
+쉽게 말해 "터미널판 앱스토어"예요.
 
 ![Homebrew 공식 사이트](/images/mac-setup-homebrew/20260306204421.png)
 
