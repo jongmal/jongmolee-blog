@@ -149,6 +149,9 @@ brew install --cask macs-fan-control
 
 배터리의 효율, 충·방전 사이클, 제조일 등 상세한 건강 정보를 보여줘요. 중고 맥북 살 때 이걸로 배터리 상태 먼저 확인하는 게 국룰이에요 ㅋㅋ
 
+![coconutBattery 스크린샷](/images/mac-setup-dressup/20260306235126.png)
+*배터리 설계 용량 대비 현재 최대 충전량, 사이클 수를 한눈에 확인할 수 있어요.*
+
 ```bash
 brew install --cask coconutbattery
 ```
