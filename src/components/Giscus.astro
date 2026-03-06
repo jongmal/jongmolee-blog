@@ -1,0 +1,53 @@
+---
+// giscus 댓글 컴포넌트
+// https://giscus.app
+---
+
+<section class="mt-16 pt-8 border-t border-gray-200 dark:border-zinc-800">
+  <div id="giscus-container"></div>
+</section>
+
+<script is:inline>
+  function loadGiscus() {
+    const container = document.getElementById('giscus-container');
+    if (!container || container.querySelector('.giscus')) return;
+
+    const theme = document.documentElement.classList.contains('dark')
+      ? 'noborder_dark'
+      : 'noborder_light';
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.setAttribute('data-repo', 'jongmal/jongmolee-blog');
+    script.setAttribute('data-repo-id', 'R_kgDORfw9cQ');
+    script.setAttribute('data-category', 'General');
+    script.setAttribute('data-category-id', 'DIC_kwDORfw9cc4C3zJd');
+    script.setAttribute('data-mapping', 'pathname');
+    script.setAttribute('data-strict', '0');
+    script.setAttribute('data-reactions-enabled', '1');
+    script.setAttribute('data-emit-metadata', '0');
+    script.setAttribute('data-input-position', 'top');
+    script.setAttribute('data-theme', theme);
+    script.setAttribute('data-lang', 'ko');
+    script.setAttribute('data-loading', 'lazy');
+    script.crossOrigin = 'anonymous';
+    script.async = true;
+    container.appendChild(script);
+  }
+
+  // 다크모드 토글 시 giscus 테마 변경
+  const observer = new MutationObserver(() => {
+    const iframe = document.querySelector('iframe.giscus-frame');
+    if (!iframe) return;
+    const theme = document.documentElement.classList.contains('dark')
+      ? 'noborder_dark'
+      : 'noborder_light';
+    iframe.contentWindow.postMessage(
+      { giscus: { setConfig: { theme } } },
+      'https://giscus.app'
+    );
+  });
+  observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
+
+  loadGiscus();
+</script>

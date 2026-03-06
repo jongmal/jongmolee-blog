@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import SeriesNav from '../components/SeriesNav.astro';
+import Giscus from '../components/Giscus.astro';
 import { getCollection } from 'astro:content';
 
 interface Props {
@@ -94,5 +95,7 @@ const formattedDate = date.toLocaleDateString('ko-KR', {
         />
       </div>
     )}
+    <!-- 댓글 -->
+    <Giscus />
   </article>
 </BaseLayout>
