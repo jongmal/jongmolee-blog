@@ -137,14 +137,6 @@ brew install --cask hazeover
 
 맥북의 하드웨어 상태를 실시간으로 체크하는 도구들이에요.
 
-### Macs Fan Control
-
-맥북의 온도를 확인하고 팬 속도를 수동으로 조절해요. 고사양 작업 중 발열이 심할 때 팬을 미리 높게 설정해두면 온도 관리가 훨씬 편해요.
-
-```bash
-brew install --cask macs-fan-control
-```
-
 ### coconutBattery
 
 배터리의 효율, 충·방전 사이클, 제조일 등 상세한 건강 정보를 보여줘요. 중고 맥북 살 때 이걸로 배터리 상태 먼저 확인하는 게 국룰이에요 ㅋㅋ
@@ -176,7 +168,7 @@ brew install --cask runcat
 오늘 소개한 패키지들을 한 줄로 정리하면:
 
 ```bash
-brew install --cask bartender hiddenbar font-pretendard itsycal monitorcontrol hazeover macs-fan-control coconutbattery runcat
+brew install --cask bartender hiddenbar font-pretendard itsycal monitorcontrol hazeover coconutbattery runcat
 ```
 
 이 한 줄이면 메뉴 바 정리, 폰트 설치, UI 유틸리티, 배터리 모니터링까지 전부 끝이에요.
