@@ -15,14 +15,14 @@
 | `debugging` | 원인 추적, 삽질 중 |
 | `root-cause` | 원인 발견, 허탈/충격 |
 | `fixed` | 해결 성공, 쾌감 |
-| `before-after` | 코드 비교, 개선 전후 |
+| `facepalm` | 과거 코드 보고 자괴감, 허탈 |
 | `prevention` | 예방/교훈 |
 
 ### 트러블슈팅 글 매핑
 ```
 ## 🔍 증상     → bug-found
 ## 🧠 원인     → debugging / root-cause
-## 🛠️ 해결     → fixed / before-after
+## 🛠️ 해결     → fixed / facepalm
 ## 🔎 예방     → prevention
 ```
 
