@@ -24,6 +24,8 @@ jobs:
 
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+        env:
+          PUBLIC_GA_ID: ${{ secrets.PUBLIC_GA_ID }}
 
       - uses: cloudflare/wrangler-action@v3
         with:
