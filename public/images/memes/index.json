@@ -13,8 +13,485 @@
     "debugging": "원인 추적, 삽질 중",
     "root-cause": "원인 발견, 허탈/충격",
     "fixed": "해결 성공, 쾌감",
-    "prevention": "예방/교훈, 테스트의 중요성",
-    "facepalm": "과거 코드 보고 자괴감, 허탈"
+    "facepalm": "과거 코드 보고 자괴감, 허탈",
+    "prevention": "예방/교훈, 테스트의 중요성"
   },
-  "memes": []
+  "stats": {
+    "prevention": 3,
+    "bug-found": 11,
+    "facepalm": 11,
+    "debugging": 5,
+    "root-cause": 7,
+    "fixed": 15
+  },
+  "memes": [
+    {
+      "id": "before-after1",
+      "file": "before-after1.webp",
+      "tags": [
+        "prevention"
+      ],
+      "alt": "다시는 프로덕션에서 안 터지게 보호복 입은 코드",
+      "sizeKB": 98
+    },
+    {
+      "id": "bug-found1",
+      "file": "bug-found1.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "프로덕션에서 500 에러가 나고 있습니다",
+      "sizeKB": 1186
+    },
+    {
+      "id": "bug-found2",
+      "file": "bug-found2.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "배포 직후 에러 알림이 쏟아지는 순간",
+      "sizeKB": 1079
+    },
+    {
+      "id": "bug-found3",
+      "file": "bug-found3.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "분명 잘 되던 코드가 갑자기 안 될 때",
+      "sizeKB": 321
+    },
+    {
+      "id": "bug-found4",
+      "file": "bug-found4.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "테스트 서버에서는 되는데 프로덕션에서 안 될 때",
+      "sizeKB": 350
+    },
+    {
+      "id": "bug-found5",
+      "file": "bug-found5.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "새벽에 장애 알림 받고 노트북 여는 순간",
+      "sizeKB": 744
+    },
+    {
+      "id": "bug-found6",
+      "file": "bug-found6.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "에러 로그 한 줄에 숨겨진 진짜 원인",
+      "sizeKB": 441
+    },
+    {
+      "id": "bug-found7",
+      "file": "bug-found7.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "내가 머지한 커밋이 장애 원인이었을 때",
+      "sizeKB": 97
+    },
+    {
+      "id": "bug-found8",
+      "file": "bug-found8.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "분명 고쳤는데 같은 버그가 또 터졌을 때",
+      "sizeKB": 716
+    },
+    {
+      "id": "debugging1",
+      "file": "debugging1.webp",
+      "tags": [
+        "debugging"
+      ],
+      "alt": "console.log 47번째 추가하는 중",
+      "sizeKB": 828
+    },
+    {
+      "id": "debugging2",
+      "file": "debugging2.webp",
+      "tags": [
+        "debugging"
+      ],
+      "alt": "의심의 눈초리로 코드를 노려보는 개발자",
+      "sizeKB": 8
+    },
+    {
+      "id": "debugging3",
+      "file": "debugging3.webp",
+      "tags": [
+        "debugging"
+      ],
+      "alt": "원인이 오타 하나였을 때의 허탈함",
+      "sizeKB": 265
+    },
+    {
+      "id": "debugging4",
+      "file": "debugging4.webp",
+      "tags": [
+        "debugging"
+      ],
+      "alt": "버그 잡고 의기양양한 개발자",
+      "sizeKB": 176
+    },
+    {
+      "id": "debugging6",
+      "file": "debugging6.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "시니어 앞에서 억지 웃음으로 버그 원인 설명하는 중",
+      "sizeKB": 398
+    },
+    {
+      "id": "facepalm1",
+      "file": "facepalm1.webp",
+      "tags": [
+        "debugging"
+      ],
+      "alt": "새벽 3시 디버깅하다 잠든 개발자",
+      "sizeKB": 625
+    },
+    {
+      "id": "facepalm2",
+      "file": "facepalm2.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "빌드 에러 원인이 세미콜론 하나였을 때 분노",
+      "sizeKB": 203
+    },
+    {
+      "id": "facepalm3",
+      "file": "facepalm3.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "3개월 전 내 코드 보고 자괴감 느끼는 중",
+      "sizeKB": 114
+    },
+    {
+      "id": "facepalm4",
+      "file": "facepalm4.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "5시간 삽질 끝에 드디어 버그 잡았을 때",
+      "sizeKB": 51
+    },
+    {
+      "id": "facepalm5",
+      "file": "facepalm5.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "내가 짠 코드가 장애 원인이었다는 걸 깨달은 순간",
+      "sizeKB": 82
+    },
+    {
+      "id": "facepalm6",
+      "file": "facepalm6.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "리뷰 없이 main에 푸시한 동료를 발견했을 때",
+      "sizeKB": 2039
+    },
+    {
+      "id": "facepalm7",
+      "file": "facepalm7.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "내가 머지한 커밋이 장애 원인이었을 때의 표정",
+      "sizeKB": 3
+    },
+    {
+      "id": "facepalm8",
+      "file": "facepalm8.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "테스트 코드 왜 안 짰냐는 말을 들었을 때",
+      "sizeKB": 51
+    },
+    {
+      "id": "facepalm9",
+      "file": "facepalm9.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "프로덕션 버그 리포트에 굳어버린 표정",
+      "sizeKB": 584
+    },
+    {
+      "id": "fixed1",
+      "file": "fixed1.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "이게 뭐지? 하며 버그를 발견한 순간",
+      "sizeKB": 5
+    },
+    {
+      "id": "fixed10",
+      "file": "fixed10.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "핫픽스 배포 성공",
+      "sizeKB": 842
+    },
+    {
+      "id": "fixed11",
+      "file": "fixed11.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "오래된 버그 드디어 해결",
+      "sizeKB": 287
+    },
+    {
+      "id": "fixed12",
+      "file": "fixed12.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "리팩토링 완료 후 깔끔해진 코드",
+      "sizeKB": 214
+    },
+    {
+      "id": "fixed13",
+      "file": "fixed13.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "테스트 전부 그린이 됐을 때",
+      "sizeKB": 263
+    },
+    {
+      "id": "fixed14",
+      "file": "fixed14.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "주말 전에 버그 해결 완료",
+      "sizeKB": 494
+    },
+    {
+      "id": "fixed2",
+      "file": "fixed2.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "빌드 성공하고 테스트 전부 통과했을 때",
+      "sizeKB": 1980
+    },
+    {
+      "id": "fixed3",
+      "file": "fixed3.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "핫픽스 머지 완료 후 기쁨의 춤",
+      "sizeKB": 137
+    },
+    {
+      "id": "fixed4",
+      "file": "fixed4.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "버그 잡고 퇴근하는 개발자",
+      "sizeKB": 550
+    },
+    {
+      "id": "fixed5",
+      "file": "fixed5.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "세미콜론 하나가 범인이었을 때의 허탈한 웃음",
+      "sizeKB": 78
+    },
+    {
+      "id": "fixed6",
+      "file": "fixed6.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "빌드 성공 후 해피댄스",
+      "sizeKB": 154
+    },
+    {
+      "id": "fixed7",
+      "file": "fixed7.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "드디어 모든 테스트 통과한 순간",
+      "sizeKB": 302
+    },
+    {
+      "id": "fixed8",
+      "file": "fixed8.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "배포 성공 후 해방감",
+      "sizeKB": 1451
+    },
+    {
+      "id": "fixed9",
+      "file": "fixed9.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "완벽한 코드를 작성한 후의 만족감",
+      "sizeKB": 1080
+    },
+    {
+      "id": "prevention1",
+      "file": "prevention1.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "버그 수정 완료 후 셀프 엄지척",
+      "sizeKB": 10
+    },
+    {
+      "id": "prevention2",
+      "file": "prevention2.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "내 코드에서 버그 발견했을 때 멘붕",
+      "sizeKB": 6
+    },
+    {
+      "id": "prevention3",
+      "file": "prevention3.webp",
+      "tags": [
+        "prevention"
+      ],
+      "alt": "내가 짠 코드가 원인이었다는 충격",
+      "sizeKB": 364
+    },
+    {
+      "id": "prevention4",
+      "file": "prevention4.webp",
+      "tags": [
+        "prevention"
+      ],
+      "alt": "원인 추적해보니 3개월 전 내 커밋",
+      "sizeKB": 182
+    },
+    {
+      "id": "prevention5",
+      "file": "prevention5.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "다시는 안 터지게 단단히 무장한 코드",
+      "sizeKB": 78
+    },
+    {
+      "id": "prevention6",
+      "file": "prevention6.webp",
+      "tags": [
+        "fixed"
+      ],
+      "alt": "세미콜론 하나 고치고 현타 오는 중",
+      "sizeKB": 965
+    },
+    {
+      "id": "root-cause1",
+      "file": "root-cause1.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "로그 한 줄에서 근본 원인을 찾은 순간",
+      "sizeKB": 3
+    },
+    {
+      "id": "root-cause2",
+      "file": "root-cause2.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "내가 짠 코드가 원인이었다는 걸 알고 한숨",
+      "sizeKB": 43
+    },
+    {
+      "id": "root-cause3",
+      "file": "root-cause3.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "버그를 숨기고 퇴근한 과거의 나",
+      "sizeKB": 941
+    },
+    {
+      "id": "root-cause4",
+      "file": "root-cause4.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "손톱 갈며 다음 버그를 대비하는 개발자",
+      "sizeKB": 97
+    },
+    {
+      "id": "root-cause5",
+      "file": "root-cause5.webp",
+      "tags": [
+        "bug-found"
+      ],
+      "alt": "코드 리뷰에서 내 실수 발견돼서 억지 미소",
+      "sizeKB": 307
+    },
+    {
+      "id": "root-cause6",
+      "file": "root-cause6.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "원인이 환경변수 오타 하나였을 때",
+      "sizeKB": 490
+    },
+    {
+      "id": "root-cause7",
+      "file": "root-cause7.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "배포 후 서버가 완전히 꺼져버린 화면",
+      "sizeKB": 289
+    },
+    {
+      "id": "root-cause8",
+      "file": "root-cause8.webp",
+      "tags": [
+        "root-cause"
+      ],
+      "alt": "이거 네가 짠 코드야? 질문에 눈 흔들리는 순간",
+      "sizeKB": 130
+    },
+    {
+      "id": "화남_키보드침",
+      "file": "화남_키보드침.webp",
+      "tags": [
+        "facepalm"
+      ],
+      "alt": "빌드가 또 실패해서 키보드 내려치는 개발자",
+      "sizeKB": 111
+    }
+  ]
 }
