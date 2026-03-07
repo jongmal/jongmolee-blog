@@ -38,6 +38,17 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
 
+    <!-- Google Analytics (GA4) -->
+    {import.meta.env.PUBLIC_GA_ID && (
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}></script>
+      <script is:inline define:vars={{ gaId: import.meta.env.PUBLIC_GA_ID }}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', gaId);
+      </script>
+    )}
+
     <!-- Umami Analytics -->
     <script defer src="https://analytics.jongmolee.com/bee.js" data-website-id="ea933af2-3f26-4213-870a-70cdad87aaf6"></script>
 
